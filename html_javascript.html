@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Javascripts</title>
+</head>
+<body>
+	<iframe src="https://free.timeanddate.com/clock/i9offx43/n5085/szw110/szh110/hocf99/hbw2/hfceee/cf100/hncccc/fdi76/mqc000/mql10/mqw4/mqd98/mhc000/mhl10/mhw4/mhd98/mmc000/mml10/mmw1/mmd98" frameborder="0" width="110" height="110" allign="right"></iframe>
+
+	<h2>Javasript help change the content</h2>
+	<p id="content">I am using Javascript to change the content</p>
+	<button type="button" onclick='document.getElementById("content").innerHTML="Hello Javascript"'>Change the Content</button>
+
+	<h2>Javascript help change the style</h2>
+
+	<p id="style1">I am using Javascript to change my style of my content</p>
+
+	<script>
+		function mystyle()
+		{
+			document.getElementById("style1").style.fontSize="45px";
+			document.getElementById("style1").style.fontFamily="Papyrus";
+			document.getElementById("style1").style.color="blue";
+			document.getElementById("style1").style.backgroundColor="yellow";
+		}
+	</script>
+	<button type="button" onclick="mystyle()">Click Here !</button>
+
+	<h2>JAVASCRIPT IMAGES</h2>
+	
+
+	<script>
+		function face(a)
+		{
+			var pic;
+			if (a==0)
+			{
+				pic="images.black.jpg"
+			}
+			else (a==1)
+			{
+				pic="images.color.png"
+
+			}
+			document.getElementById('gambar').src=pic;
+
+		}
+	</script>
+	<img src="images/black.jpg" id="gambar" width="100" height="200">
+
+	<p>
+		<button type="button" onclick="face(1)">Turn On</button>
+		<button type="button" onclick="face(0)">Turn Off</button>
+	</p>
+	<h2>Popup Window : Alert Box</h2>
+	<button onclick="myAlertBox()">Click Here</button>
+
+	<script>
+		function myAlertBox()
+		{
+			alert("salam. \n welcome to my page.")
+		}
+	</script>
+	<script>
+		alert("salam. \n welcome to my page.")
+	</script>
+
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.496166756837!2d102.27092387498666!3d5.756997594225392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b68fe6f50d123f%3A0xaeb67217536d6442!2sUiTM%20Machang!5e1!3m2!1sen!2smy!4v1734227257573!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</body>
+</html>
+

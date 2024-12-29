@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Table</title>
+	<style>
+		table, tr, th, td
+		{
+			border: 2px solid red;
+			border-collapse: collapse;
+		}
+		th,td
+		{
+			padding: 45px;
+		}
+		th
+		{
+			background-color: blue;
+			color: yellow;
+			text-align: center; (kalau taknak tayah masukkan)
+		}
+		tr:nth-child(odd) 
+		{
+			background-color: yellowgreen;
+		}
+		tr:nth-child(even) 
+		{
+			background-color: pink
+		}
+		}
+		td
+		{
+			text-align: center;
+		}
+		td:hover
+		{
+			background-color: grey;
+		}
+	</style>
+</head>
+<body>
+	<h1>Basic Table</h1>
+
+		<table style="width:100%">
+			<caption>Table 1: Basic HTML Table</caption>
+			<tr>
+				<th style="width:20%">Name</th>
+				<th style="width:20%">Student ID</th>
+				<th style="width: 20%">Picture</th>
+				<th style="width:20%">Phone Number</th>
+			</tr>
+			<tr style="height:250px">
+				<td>Nur Syamiera Binti Mohd Zalmiki</td>
+				<td>2022830114</td>
+				<td><img src="images/passport.jpg" style="height: 100px;"></td>
+				<td>011-1876-1241</td>
+			</tr>
+			<tr>
+				<td>Izzati Binti Zaharuddin</td>
+				<td>2022830114</td>
+				<td><img src="images/IZZATI.jpg" style="height: 100px;"></td>
+				<td>011-1876-1241</td>
+			</tr>
+			<tr>
+				<td>Wan Nur Aina Binti Razali</td>
+				<td>2022830114</td>
+				<td><img src="images/AINA.jpg" style="height: 100px;"></td>
+				<td>011-1876-1241</td>
+			</tr>
+			<table>
+				<h1>Colspan</h1>
+
+			<table style="width: 100%">
+				<tr>
+					<th>Name</th>
+					<th>Student ID</th>
+					<th colspan="3">Subject</th>
+				</tr>
+				<tr>
+					<td>Nur Syamiera</td>
+					<td>2022830114</td>
+					<td>IMD237</td>
+					<td>IMD235</td>
+					<td>IMD236</td>
+				</tr>
+				
+			</table>
+
+			<h1>Rowspan</h1>
+			<table style="width:70%">
+				<tr>
+					<th>Name</th>
+					<td>Aina</td>
+
+				</tr>
+				<tr>
+					<th rowspan="2">Email</th>
+					<td>nursyamierazalmiki@gmail.com</td>
+				</tr>
+
+				<tr>
+					<td>symrazalmk@gmail.com</td>
+				</tr>
+				<tr>
+					<th>Alamat</th>
+					<td rowspan="2">Kelantan</td>
+				</tr>
+				<tr>
+					<th>Alamat Surat</th>
+				</tr>
+
+				
+			</table>
+
+
+</body>
+</html>
